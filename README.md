@@ -73,7 +73,7 @@ The both long command-lines have a same structure, they pipe multiple commands u
 1. Dockerize your Gradio app to get it ready to be deployed to any cloud hub. [Watch this](https://www.youtube.com/watch?v=f6zJwK-pCJo)
 
 ## Evaluation
-The evaluation metric for the fine-tuned pre-trained models are the **Root Mean Squared Error**.
+The evaluation metric for the fine-tuned pre-trained models is the **Root Mean Squared Error**.
 
 The target can be any values between -1 and 1, inclusive.
 
