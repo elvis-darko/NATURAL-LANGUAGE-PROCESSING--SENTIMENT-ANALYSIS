@@ -1,21 +1,25 @@
 # PROJECT: Natural Language Processing - SENTIMENT ANALYSIS USING HUGGING FACE
 
 ## Description 
-In this project, I finetune a pre-trained machine learning model to assess if a Twitter post related to vaccinations is positive, neutral, or negative. This solution could help governments and other public health actors monitor public sentiment towards COVID-19 vaccinations and help improve public health policy, vaccine communication strategies, and vaccination programs across the world.
+In this project, I finetune a pre-trained machine learning model to assess if a Twitter post related to vaccinations is positive, neutral, or negative.<br />This solution could help governments and other public health actors monitor public sentiment towards COVID-19 vaccinations and help improve public health policy, vaccine communication strategies, and vaccination programs across the world.
 
-This project serves as an introduction to Unstructured data exploitation, especially Natural Language Processing data, using ML.
+This project serves as an introduction to Unstructured data exploitation, especially Natural Language Processing data, using Machine Learning..
 
-The fine-tuned machine learning model will be used to used to create a Gradio app that will be hosted on Hugging Face.
+The fine-tuned machine learning model will be used to used to create a Streamlit App that will be hosted on Hugging Face.
 
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------|:------|
-| LP 5     | The Sentiment Analysis Project - Natural Language Processing| Medium<br />LinkedIn| [Gradio App](https://huggingface.co/spaces/elvis-d/tweet-sentiment-analysis.GRADIO)<br />[Streamlit App](https://huggingface.co/spaces/elvis-d/Tweet-Sentiment-Analysis-App.STREAMLIT) |
+| LP 5     | The Sentiment Analysis Project - Natural Language Processing| [Medium](https://medium.com/@el.darkoel/natural-language-processing-tweet-sentiment-analysis-e2421896783d)<br />LinkedIn| [Streamlit App - Hugging Face](https://huggingface.co/spaces/elvis-d/Tweet-Sentiment-Analysis-App.STREAMLIT) |
 
 
-## About
+## Screenshot of App Deployed on Hugging Face
+
+![Alt text](image.png)
+
+## Note on Data
 The data comes from tweets collected and classified through Crowdbreaks.org [Muller, Martin M., and Marcel Salathe. "Crowdbreaks: Tracking Health Trends Using Public Social Media Data and Crowdsourcing." Frontiers in public health 7 (2019).]. Tweets have been classified as pro-vaccine (1), neutral (0) or anti-vaccine (-1). The tweets have had usernames and web addresses removed.
 
-The objective of this project is to develop a machine learning model to assess if a twitter post that is related to vaccinations is positive, neutral, or negative.
+The objective of this project is to develop a machine learning model and build a GUI App to assess if a twitter post that is related to vaccinations is positive, neutral, or negative.
 
 **Variable definition:**
 
@@ -28,13 +32,11 @@ The objective of this project is to develop a machine learning model to assess i
 **agreement:** The tweets were labeled by three people. Agreement indicates the percentage of the three reviewers that agreed on the given label. You may use this column in your training, but agreement data will not be shared for the test set.
 
 
-Files available for download are:
+Data files available are:
 
 **Train.csv** - Labelled tweets on which to train your model
 
 **Test.csv** - Tweets that you must classify using your trained model
-
-**SampleSubmission.csv** - is an example of what your submission file should look like. The order of the rows does not matter, but the names of the ID must be correct. Values in the 'label' column should range between -1 and 1.
 
 
 ## Setup
@@ -75,4 +77,5 @@ The evaluation metric for this challenge is the **Root Mean Squared Error**.
 
 The target can be any values between -1 and 1, inclusive.
 
-```
+## Author
+Elvis Darko
